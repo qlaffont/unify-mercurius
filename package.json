@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "eslint src test",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "unify-mercurius",
+  "author": "flexper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flexper/unify-mercurius.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flexper/unify-mercurius/issues",
+    "email": "contact@flexper.fr"
+  },
+  "module": "dist/unify-mercurius.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/unify-mercurius.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/unify-mercurius.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "29.0.1",
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "@types/node": "18.7.14",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "fastify": "^4.5.3",
+    "husky": "^8.0.1",
+    "mercurius-codegen": "^4.0.1",
+    "mercurius-integration-testing": "^5.0.0",
+    "node-abort-controller": "^3.0.1",
+    "node-fetch": "^3.2.10",
+    "prettier": "2.7.1",
+    "size-limit": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "mercurius": "^10.5.0",
+    "unify-errors": "^1.2.18"
+  }
+}
