@@ -1,8 +1,8 @@
 import Fastify from 'fastify';
 import mercurius from 'mercurius';
-import {BadRequest} from "unify-errors";
+import { BadRequest } from "unify-errors";
 
-const app = Fastify();
+export const app = Fastify();
 
 const schema = `
 type Query {
@@ -28,14 +28,6 @@ const resolvers = {
         resolvers,
         // Only required to use .batchQueries()
         allowBatchedQueries: true,
-        //@ts-ignore
-        errorHandler: (error, request, reply) => {
-            console.log(error);
-            reply.send({
-                errors: [],
-                data: {}
-            });
-        },
         errorFormatter: (execution) => {
             // console.log(execution);
             return {
@@ -44,7 +36,14 @@ const resolvers = {
             }
         },
     });
+
+    app.setErrorHandler(
+        //@ts-ignore
+        (error, request, reply) => {
+            console.log(error);
+            reply.send({
+                errors: [],
+                data: {}
+            });
+        });
 })();
-
-
-export const Server = app;
