@@ -21,33 +21,43 @@ export interface Options {
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
   ((execution) => {
     const newResponse = {
-      //@ts-ignore
-      errors: execution.errors!.map((error) => {
-        return (error.originalError as Error | CustomError | false) instanceof
-          CustomError
-          ? {
-              ...error,
-              message: (error.originalError as CustomError).message,
-              extensions: {
-                ...(options?.hideContextOnProd === false ||
-                process.env.NODE_ENV !== 'production'
-                  ? (error.originalError as CustomError).context
-                  : {}),
-              },
-            }
-          : error;
-      }),
+      errors: execution.errors
+        ? //@ts-ignore
+          execution.errors.map((error) => {
+            return (error.originalError as
+              | Error
+              | CustomError
+              | false) instanceof CustomError
+              ? {
+                  ...error,
+                  message: (error.originalError as CustomError).message,
+                  extensions: {
+                    ...(options?.hideContextOnProd === false ||
+                    process.env.NODE_ENV !== 'production'
+                      ? (error.originalError as CustomError).context
+                      : {}),
+                  },
+                }
+              : error;
+          })
+        : [
+            {
+              message: 'Internal Server Error',
+              extensions: { error: execution.toString(), data: undefined },
+            },
+          ],
       data: execution.data,
     };
 
     let newStatusCode = 200;
 
-    newStatusCode = execution.errors!.reduce(
+    //@ts-ignore
+    newStatusCode = newResponse.errors.reduce(
       //@ts-ignore
       (prevStatusCode: number, error) => {
         const customError = error.originalError as CustomError;
 
-        if (customError instanceof CustomError) {
+        if (customError && customError instanceof CustomError) {
           let httpCode = 0;
 
           switch (customError.constructor) {
