@@ -72,7 +72,7 @@
     "fastify": "4.8.1",
     "husky": "8.0.1",
     "mercurius-codegen": "4.0.1",
-    "mercurius-integration-testing": "6.0.0",
+    "mercurius-integration-testing": "6.0.1",
     "node-abort-controller": "3.0.1",
     "node-fetch": "3.2.10",
     "prettier": "2.7.1",
