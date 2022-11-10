@@ -74,7 +74,7 @@
     "mercurius-codegen": "5.0.0",
     "mercurius-integration-testing": "6.0.1",
     "node-abort-controller": "3.0.1",
-    "node-fetch": "3.2.10",
+    "node-fetch": "3.3.0",
     "prettier": "2.7.1",
     "size-limit": "8.1.0",
     "tsdx": "0.14.1",
