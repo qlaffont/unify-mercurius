@@ -37,6 +37,7 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
                       ? (error.originalError as CustomError).context
                       : {}),
                   },
+                  originalError: error.originalError,
                 }
               : error;
           })
