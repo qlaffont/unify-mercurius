@@ -11,7 +11,7 @@ specifiers:
   eslint-plugin-import: 2.26.0
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-simple-import-sort: 8.0.0
-  fastify: 4.10.0
+  fastify: 4.10.2
   graphql: ^16.6.0
   husky: 8.0.2
   mercurius: ^11.0.0
@@ -42,10 +42,10 @@ devDependencies:
   eslint-plugin-import: 2.26.0_ivdjtymx6ubvknadox4oh4qsue
   eslint-plugin-prettier: 4.2.1_pgxuib4rd7wiymfktharf5ydt4
   eslint-plugin-simple-import-sort: 8.0.0_eslint@8.28.0
-  fastify: 4.10.0
+  fastify: 4.10.2
   husky: 8.0.2
-  mercurius-codegen: 5.0.0_sfoglhohxg5ezpfv4ijzmlpgpe
-  mercurius-integration-testing: 6.0.1_kc66h3anumbllpooaabgpgpgvy
+  mercurius-codegen: 5.0.0_7d2dmxruj3akoi2fxnzou53q5a
+  mercurius-integration-testing: 6.0.1_4f7h7njbvuw434lwp7xivdjsia
   node-abort-controller: 3.0.1
   node-fetch: 3.3.0
   prettier: 2.7.1
@@ -3416,6 +3416,11 @@ packages:
     dependencies:
       safe-buffer: 5.2.1
 
+  /content-type/1.0.4:
+    resolution: {integrity: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==}
+    engines: {node: '>= 0.6'}
+    dev: true
+
   /convert-source-map/1.8.0:
     resolution: {integrity: sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==}
     dependencies:
@@ -4724,14 +4729,15 @@ packages:
   /fastify-plugin/4.2.1:
     resolution: {integrity: sha512-dlGKiwLzRBKkEf5J5ho0uAD/Jdv8GQVUbriB3tAX3ehRUXE4gTV3lRd5inEg9li1aLzb0EGj8y2K4/8g1TN06g==}
 
-  /fastify/4.10.0:
-    resolution: {integrity: sha512-8yQPT+c/EbETjNxwM9PHeu2U4eXMoXTva0L9zoVgv7/ZCBtovWpfK4RKexhyh5Va3Jg82HovnfCxoZmwcZDfsQ==}
+  /fastify/4.10.2:
+    resolution: {integrity: sha512-0T+4zI6N3S8ex0LCZi3H4FasJR4AzWw834fUkPWvV8r6GBJkLmAOfFxH8f5V29Plef24IK0QSQD/tz1Nx+1UOA==}
     dependencies:
       '@fastify/ajv-compiler': 3.3.1
       '@fastify/error': 3.0.0
       '@fastify/fast-json-stringify-compiler': 4.1.0
       abstract-logging: 2.0.1
       avvio: 8.2.0
+      content-type: 1.0.4
       find-my-way: 7.3.1
       light-my-request: 5.6.1
       pino: 8.6.1
@@ -6693,7 +6699,7 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /mercurius-codegen/5.0.0_sfoglhohxg5ezpfv4ijzmlpgpe:
+  /mercurius-codegen/5.0.0_7d2dmxruj3akoi2fxnzou53q5a:
     resolution: {integrity: sha512-q7bxeIcdarCRIwUXyFXL0vmGbXXtjijCm2qLz3xpvuZH1l0FFZoZakx3S6PSvjvkUUxI4Nc6zD4HqL2zeSkV/Q==}
     peerDependencies:
       fastify: ^4.9.2
@@ -6711,7 +6717,7 @@ packages:
       '@graphql-tools/utils': 9.0.1_graphql@16.6.0
       '@graphql-typed-document-node/core': 3.1.1_graphql@16.6.0
       chokidar: 3.5.3
-      fastify: 4.10.0
+      fastify: 4.10.2
       graphql: 16.6.0
       mercurius: 11.0.1_graphql@16.6.0
       mkdirp: 1.0.4
@@ -6721,7 +6727,7 @@ packages:
       - supports-color
     dev: true
 
-  /mercurius-integration-testing/6.0.1_kc66h3anumbllpooaabgpgpgvy:
+  /mercurius-integration-testing/6.0.1_4f7h7njbvuw434lwp7xivdjsia:
     resolution: {integrity: sha512-YBjsR0KtjtnlGIuyOpg40PD57eq9XKSSsyisrsGUAY2Ql4nY6nP8oM3JN2zjk7j8zYlZRnIiZKovsTOddqXZdA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6731,7 +6737,7 @@ packages:
     dependencies:
       '@graphql-typed-document-node/core': 3.1.1_graphql@16.6.0
       cookie: 0.5.0
-      fastify: 4.10.0
+      fastify: 4.10.2
       graphql: 16.6.0
       mercurius: 11.0.1_graphql@16.6.0
       ws: 8.9.0
