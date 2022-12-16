@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@jest/globals': 29.3.1
   '@size-limit/preset-small-lib': 8.1.0
-  '@types/node': 18.11.15
+  '@types/node': 18.11.16
   '@typescript-eslint/eslint-plugin': 5.46.1
   '@typescript-eslint/parser': 5.46.1
   eslint: 8.29.0
@@ -34,7 +34,7 @@ dependencies:
 devDependencies:
   '@jest/globals': 29.3.1
   '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-  '@types/node': 18.11.15
+  '@types/node': 18.11.16
   '@typescript-eslint/eslint-plugin': 5.46.1_imrg37k3svwu377c6q7gkarwmi
   '@typescript-eslint/parser': 5.46.1_ha6vam6werchizxrnqvarmz2zu
   eslint: 8.29.0
@@ -50,7 +50,7 @@ devDependencies:
   node-fetch: 3.3.0
   prettier: 2.8.1
   size-limit: 8.1.0
-  tsdx: 0.14.1_@types+node@18.11.15
+  tsdx: 0.14.1_@types+node@18.11.16
   tslib: 2.4.1
   typescript: 4.9.4
 
@@ -1720,7 +1720,7 @@ packages:
     dependencies:
       '@jest/fake-timers': 29.3.1
       '@jest/types': 29.3.1
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       jest-mock: 29.3.1
     dev: true
 
@@ -1758,7 +1758,7 @@ packages:
     dependencies:
       '@jest/types': 29.3.1
       '@sinonjs/fake-timers': 9.1.2
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       jest-message-util: 29.3.1
       jest-mock: 29.3.1
       jest-util: 29.3.1
@@ -1925,7 +1925,7 @@ packages:
       '@jest/schemas': 29.0.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       '@types/yargs': 17.0.10
       chalk: 4.1.2
     dev: true
@@ -2137,7 +2137,7 @@ packages:
   /@types/graceful-fs/4.1.5:
     resolution: {integrity: sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==}
     dependencies:
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
     dev: true
 
   /@types/istanbul-lib-coverage/2.0.4:
@@ -2178,8 +2178,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.11.15:
-    resolution: {integrity: sha512-VkhBbVo2+2oozlkdHXLrb3zjsRkpdnaU2bXmX8Wgle3PUi569eLRaHGlgETQHR7lLL1w7GiG3h9SnePhxNDecw==}
+  /@types/node/18.11.16:
+    resolution: {integrity: sha512-6T7P5bDkRhqRxrQtwj7vru+bWTpelgtcETAZEUSdq0YISKz8WKdoBukQLYQQ6DFHvU9JRsbFq0JH5C51X2ZdnA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -2201,7 +2201,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
     dev: true
 
   /@types/semver/7.3.12:
@@ -5950,7 +5950,7 @@ packages:
     dependencies:
       '@jest/types': 29.3.1
       '@types/graceful-fs': 4.1.5
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       anymatch: 3.1.2
       fb-watchman: 2.0.1
       graceful-fs: 4.2.10
@@ -6060,7 +6060,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.3.1
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       jest-util: 29.3.1
     dev: true
 
@@ -6254,7 +6254,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.3.1
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       chalk: 4.1.2
       ci-info: 3.3.1
       graceful-fs: 4.2.10
@@ -6317,7 +6317,7 @@ packages:
     resolution: {integrity: sha512-lY4AnnmsEWeiXirAIA0c9SDPbuCBq8IYuDVL8PMm0MZ2PEs2yPvRA/J64QBXuZp7CYKrDM/rmNrc9/i3KJQncw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       jest-util: 29.3.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
@@ -7878,7 +7878,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-sourcemaps/0.6.3_letj5ng6fb6bv4tjbsnpq4ywdy:
+  /rollup-plugin-sourcemaps/0.6.3_jv5mlto2iglw5fot5nvnhjh5ny:
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -7889,7 +7889,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@1.32.1
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       rollup: 1.32.1
       source-map-resolve: 0.6.0
     dev: true
@@ -7933,7 +7933,7 @@ packages:
     hasBin: true
     dependencies:
       '@types/estree': 0.0.51
-      '@types/node': 18.11.15
+      '@types/node': 18.11.16
       acorn: 7.4.1
     dev: true
 
@@ -8733,7 +8733,7 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsdx/0.14.1_@types+node@18.11.15:
+  /tsdx/0.14.1_@types+node@18.11.16:
     resolution: {integrity: sha512-keHmFdCL2kx5nYFlBdbE3639HQ2v9iGedAFAajobrUTH2wfX0nLPdDhbHv+GHLQZqf0c5ur1XteE8ek/+Eyj5w==}
     engines: {node: '>=10'}
     hasBin: true
@@ -8784,7 +8784,7 @@ packages:
       progress-estimator: 0.2.2
       regenerator-runtime: 0.13.9
       rollup: 1.32.1
-      rollup-plugin-sourcemaps: 0.6.3_letj5ng6fb6bv4tjbsnpq4ywdy
+      rollup-plugin-sourcemaps: 0.6.3_jv5mlto2iglw5fot5nvnhjh5ny
       rollup-plugin-terser: 5.3.1_rollup@1.32.1
       rollup-plugin-typescript2: 0.27.3_u7o3wpaaa4xpcuuxlpndi4hgqe
       sade: 1.8.1
