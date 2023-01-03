@@ -13,7 +13,7 @@ specifiers:
   eslint-plugin-simple-import-sort: 8.0.0
   fastify: 4.11.0
   graphql: ^16.6.0
-  husky: 8.0.2
+  husky: 8.0.3
   mercurius: ^11.0.0
   mercurius-codegen: 5.0.1
   mercurius-integration-testing: 6.0.1
@@ -43,7 +43,7 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_32m5uc2milwdw3tnkcq5del26y
   eslint-plugin-simple-import-sort: 8.0.0_eslint@8.31.0
   fastify: 4.11.0
-  husky: 8.0.2
+  husky: 8.0.3
   mercurius-codegen: 5.0.1_c5nm7wqgrhhdf2f53gktl7sm3e
   mercurius-integration-testing: 6.0.1_sben6fsfnkmppqlbrybbrrixaq
   node-abort-controller: 3.0.1
@@ -5287,8 +5287,8 @@ packages:
     resolution: {integrity: sha512-jCVkMl+EaM80rrMrAPl96SGG4NRac53UyI1o/yAzebDntEY6K6/Fj2HOjdPg8omTqIe5Y0wPBai2q5xXrIbarA==}
     dev: true
 
-  /husky/8.0.2:
-    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
