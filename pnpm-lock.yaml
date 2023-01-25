@@ -17,7 +17,7 @@ specifiers:
   mercurius: ^11.0.0
   mercurius-codegen: 5.0.1
   mercurius-integration-testing: 6.0.1
-  node-abort-controller: 3.0.1
+  node-abort-controller: 3.1.0
   node-fetch: 3.3.0
   prettier: 2.8.3
   size-limit: 8.1.2
@@ -46,7 +46,7 @@ devDependencies:
   husky: 8.0.3
   mercurius-codegen: 5.0.1_cpxlrvvksd7n7apwy7dha7zn2m
   mercurius-integration-testing: 6.0.1_ptxk7xrs7kyajbrsd2ptmzm4se
-  node-abort-controller: 3.0.1
+  node-abort-controller: 3.1.0
   node-fetch: 3.3.0
   prettier: 2.8.3
   size-limit: 8.1.2
@@ -7019,8 +7019,9 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /node-abort-controller/3.0.1:
-    resolution: {integrity: sha512-/ujIVxthRs+7q6hsdjHMaj8hRG9NuWmwrz+JdRwZ14jdFoKSkm+vDsCbF9PLpnSqjaWQJuTmVtcWHNLr+vrOFw==}
+  /node-abort-controller/3.1.0:
+    resolution: {integrity: sha512-rpVgrXyHwHPGufGxZT1ttkXQwQiVDifiqbOHCR4InwFpQ4aItUuc3zX7l/0dKd0hXHaqftdXTh8eSZGzqCI9AA==}
+    engines: {node: <14.7.0}
     dev: true
 
   /node-domexception/1.0.0:
