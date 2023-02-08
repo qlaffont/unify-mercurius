@@ -13,9 +13,9 @@ import {
 
 export interface Options {
   /**
-   * Removes the 'context' key from the error response if NODE_ENV is 'production'
+   * Removes the 'context' key from the error response
    */
-  hideContextOnProd?: boolean;
+  hideContext?: boolean;
 }
 
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
@@ -24,6 +24,15 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
       errors: execution.errors
         ? //@ts-ignore
           execution.errors.map((error) => {
+            const enrichedError = error;
+
+            if (!options?.hideContext === true) {
+              enrichedError.extensions.exception = enrichedError.originalError;
+              Object.defineProperty(enrichedError, 'extensions', {
+                enumerable: true,
+              });
+            }
+
             return (error.originalError as
               | Error
               | CustomError
@@ -32,19 +41,25 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
                   ...error,
                   message: (error.originalError as CustomError).message,
                   extensions: {
-                    ...(options?.hideContextOnProd === false ||
-                    process.env.NODE_ENV !== 'production'
-                      ? (error.originalError as CustomError).context
-                      : {}),
+                    ...(options?.hideContext === true
+                      ? {}
+                      : (error.originalError as CustomError).context || {}),
                   },
                   originalError: error.originalError,
                 }
-              : error;
+              : enrichedError;
           })
         : [
             {
               message: 'Internal Server Error',
-              extensions: { error: execution.toString(), data: undefined },
+              ...(options?.hideContext === true
+                ? {}
+                : {
+                    extensions: {
+                      error: execution.toString(),
+                      data: undefined,
+                    },
+                  }),
             },
           ],
       data: execution.data,
@@ -98,6 +113,10 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
 
           return httpCode > prevStatusCode ? httpCode : prevStatusCode;
         } else {
+          if (error.message === 'Graphql validation error') {
+            return 400;
+          }
+
           return 500;
         }
       },

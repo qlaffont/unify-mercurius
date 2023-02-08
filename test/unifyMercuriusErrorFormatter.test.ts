@@ -94,10 +94,12 @@ describe('unifyMercuriusErrorFormatter', () => {
     });
   });
 
-  describe('hideContextOnProd', () => {
+  describe('hideContext', () => {
     it('should hide extensions if option enable', async () => {
       process.env.NODE_ENV = 'production';
-      const client = createMercuriusTestClient(makeServer({}));
+      const client = createMercuriusTestClient(
+        makeServer({ hideContext: true })
+      );
 
       const res = await client.query(
         `query {
@@ -112,10 +114,7 @@ describe('unifyMercuriusErrorFormatter', () => {
     });
 
     it('should display extensions if option is disable', async () => {
-      process.env.NODE_ENV = 'production';
-      const client = createMercuriusTestClient(
-        makeServer({ hideContextOnProd: false })
-      );
+      const client = createMercuriusTestClient(makeServer({}));
 
       const res = await client.query(
         `query {

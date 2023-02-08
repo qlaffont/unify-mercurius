@@ -55,9 +55,9 @@ app.listen(3000)
 
 ## Plugin options
 
-| name                | default | description                                                                                   |
-| ------------------- | ------- | --------------------------------------------------------------------------------------------- |
-| _hideContextOnProd_ | false   | If **NODE_ENV** is set to 'production', will remove the 'context' key from the error response |
+| name          | default | description                                                   |
+| ------------- | ------- | ------------------------------------------------------------- |
+| _hideContext_ | false   | If true will remove the 'context' key from the error response |
 
 ## Tests
 
