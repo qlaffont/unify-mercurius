@@ -94,12 +94,10 @@ describe('unifyMercuriusErrorFormatter', () => {
     });
   });
 
-  describe('hideContext', () => {
+  describe('hideError', () => {
     it('should hide extensions if option enable', async () => {
       process.env.NODE_ENV = 'production';
-      const client = createMercuriusTestClient(
-        makeServer({ hideContext: true })
-      );
+      const client = createMercuriusTestClient(makeServer({ hideError: true }));
 
       const res = await client.query(
         `query {
@@ -108,7 +106,8 @@ describe('unifyMercuriusErrorFormatter', () => {
       );
 
       const error = res.errors![0];
-      expect(error.extensions).not.toStrictEqual({
+      expect(error.stack).not.toBeDefined();
+      expect(error.extensions).toStrictEqual({
         issue: 'This is the issue',
       });
     });
@@ -123,6 +122,7 @@ describe('unifyMercuriusErrorFormatter', () => {
       );
 
       const error = res.errors![0];
+      expect(error.stack).toBeDefined();
       expect(error.extensions).toStrictEqual({
         issue: 'This is the issue',
       });

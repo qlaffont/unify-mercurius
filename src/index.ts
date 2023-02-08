@@ -13,9 +13,9 @@ import {
 
 export interface Options {
   /**
-   * Removes the 'context' key from the error response
+   * Removes the 'error' key from the error response
    */
-  hideContext?: boolean;
+  hideError?: boolean;
 }
 
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
@@ -26,9 +26,13 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
           execution.errors.map((error) => {
             const enrichedError = error;
 
-            if (!options?.hideContext === true) {
+            if (!options?.hideError === true) {
+              enrichedError.extensions.exception = enrichedError.originalError;
               enrichedError.extensions.exception = enrichedError.originalError;
               Object.defineProperty(enrichedError, 'extensions', {
+                enumerable: true,
+              });
+              Object.defineProperty(enrichedError, 'stack', {
                 enumerable: true,
               });
             }
@@ -41,18 +45,18 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
                   ...error,
                   message: (error.originalError as CustomError).message,
                   extensions: {
-                    ...(options?.hideContext === true
-                      ? {}
-                      : (error.originalError as CustomError).context || {}),
+                    ...(error.originalError as CustomError).context,
                   },
-                  originalError: error.originalError,
+                  ...(options?.hideError === true
+                    ? {}
+                    : { originalError: error.originalError }),
                 }
               : enrichedError;
           })
         : [
             {
               message: 'Internal Server Error',
-              ...(options?.hideContext === true
+              ...(options?.hideError === true
                 ? {}
                 : {
                     extensions: {

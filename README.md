@@ -55,9 +55,9 @@ app.listen(3000)
 
 ## Plugin options
 
-| name          | default | description                                                   |
-| ------------- | ------- | ------------------------------------------------------------- |
-| _hideContext_ | false   | If true will remove the 'context' key from the error response |
+| name        | default | description                                                       |
+| ----------- | ------- | ----------------------------------------------------------------- |
+| _hideError_ | false   | If true will remove the originalError key from the error response |
 
 ## Tests
 
