@@ -142,7 +142,8 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
           ) {
             return 400;
           }
-          if (error.message.toLowerCase().contains('too many requests')) {
+
+          if (error.message.toLowerCase().includes('too many requests')) {
             return 429;
           }
 
