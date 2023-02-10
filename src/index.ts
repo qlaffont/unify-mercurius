@@ -18,6 +18,22 @@ export interface Options {
   hideError?: boolean;
 }
 
+const safeStringify = (obj: unknown, indent = 2) => {
+  let cache: any[] | null = [];
+  const retVal = JSON.stringify(
+    obj,
+    (_key, value) =>
+      typeof value === 'object' && value !== null
+        ? cache!.includes(value)
+          ? undefined // Duplicate reference found, discard key
+          : cache!.push(value) && value // Store value in our collection
+        : value,
+    indent
+  );
+  cache = null;
+  return retVal;
+};
+
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
   ((execution) => {
     const newResponse = {
@@ -27,7 +43,6 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
             const enrichedError = error;
 
             if (!options?.hideError === true) {
-              enrichedError.extensions.exception = enrichedError.originalError;
               enrichedError.extensions.exception = enrichedError.originalError;
               Object.defineProperty(enrichedError, 'extensions', {
                 enumerable: true,
@@ -41,30 +56,34 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
               | Error
               | CustomError
               | false) instanceof CustomError
-              ? {
-                  ...error,
-                  message: (error.originalError as CustomError).message,
-                  extensions: {
-                    ...(error.originalError as CustomError).context,
-                  },
-                  ...(options?.hideError === true
-                    ? {}
-                    : { originalError: error.originalError }),
-                }
-              : enrichedError;
+              ? JSON.parse(
+                  safeStringify({
+                    ...error,
+                    message: (error.originalError as CustomError).message,
+                    extensions: {
+                      ...(error.originalError as CustomError).context,
+                    },
+                    ...(options?.hideError === true
+                      ? {}
+                      : { originalError: error.originalError }),
+                  })
+                )
+              : JSON.parse(safeStringify(enrichedError));
           })
         : [
-            {
-              message: 'Internal Server Error',
-              ...(options?.hideError === true
-                ? {}
-                : {
-                    extensions: {
-                      error: execution.toString(),
-                      data: undefined,
-                    },
-                  }),
-            },
+            JSON.parse(
+              safeStringify({
+                message: 'Internal Server Error',
+                ...(options?.hideError === true
+                  ? {}
+                  : {
+                      extensions: {
+                        error: execution.toString(),
+                        data: undefined,
+                      },
+                    }),
+              })
+            ),
           ],
       data: execution.data,
     };
