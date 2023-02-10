@@ -136,8 +136,14 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
 
           return httpCode > prevStatusCode ? httpCode : prevStatusCode;
         } else {
-          if (error.message === 'Graphql validation error') {
+          if (
+            error.message.toLowerCase() ===
+            'graphql validation error'.toLowerCase()
+          ) {
             return 400;
+          }
+          if (error.message.toLowerCase().contains('too many requests')) {
+            return 429;
           }
 
           return 500;
