@@ -34,6 +34,7 @@ const safeStringify = (obj: unknown, indent = 2) => {
   return retVal;
 };
 
+//@ts-ignore
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
   ((execution) => {
     const newResponse = {
@@ -56,19 +57,17 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
               | Error
               | CustomError
               | false) instanceof CustomError
-              ? JSON.parse(
-                  safeStringify({
-                    ...error,
-                    message: (error.originalError as CustomError).message,
-                    extensions: {
-                      ...(error.originalError as CustomError).context,
-                    },
-                    ...(options?.hideError === true
-                      ? {}
-                      : { originalError: error.originalError }),
-                  })
-                )
-              : JSON.parse(safeStringify(enrichedError));
+              ? {
+                  ...error,
+                  message: (error.originalError as CustomError).message,
+                  extensions: {
+                    ...(error.originalError as CustomError).context,
+                  },
+                  ...(options?.hideError === true
+                    ? {}
+                    : { originalError: error.originalError }),
+                }
+              : enrichedError;
           })
         : [
             JSON.parse(
@@ -155,6 +154,6 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
 
     return {
       statusCode: newStatusCode,
-      response: newResponse,
+      response: JSON.parse(safeStringify(newResponse)),
     };
   }) as MercuriusCommonOptions['errorFormatter'];
