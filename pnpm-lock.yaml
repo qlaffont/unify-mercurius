@@ -16,7 +16,7 @@ specifiers:
   husky: 8.0.3
   mercurius: ^12.0.0
   mercurius-codegen: 5.0.1
-  mercurius-integration-testing: 6.0.1
+  mercurius-integration-testing: 7.0.0
   node-abort-controller: 3.1.1
   node-fetch: 3.3.0
   prettier: 2.8.4
@@ -45,7 +45,7 @@ devDependencies:
   fastify: 4.14.0
   husky: 8.0.3
   mercurius-codegen: 5.0.1_lrp5qxdvotnjzawqziivmm6a4e
-  mercurius-integration-testing: 6.0.1_22zlcl2whsn2p7pgs6f55yhf6u
+  mercurius-integration-testing: 7.0.0_22zlcl2whsn2p7pgs6f55yhf6u
   node-abort-controller: 3.1.1
   node-fetch: 3.3.0
   prettier: 2.8.4
@@ -6799,13 +6799,15 @@ packages:
       - supports-color
     dev: true
 
-  /mercurius-integration-testing/6.0.1_22zlcl2whsn2p7pgs6f55yhf6u:
-    resolution: {integrity: sha512-YBjsR0KtjtnlGIuyOpg40PD57eq9XKSSsyisrsGUAY2Ql4nY6nP8oM3JN2zjk7j8zYlZRnIiZKovsTOddqXZdA==}
+  /mercurius-integration-testing/7.0.0_22zlcl2whsn2p7pgs6f55yhf6u:
+    resolution: {integrity: sha512-0z6KEsyRNcENWG8QXU5rCZfqrU6wZ/Oeii86OxhdX8KiTIwb3zl+6xQeOlom5vu7zsY5Db5rGeLWEqVbc1Mwjw==}
     engines: {node: '>=14'}
     peerDependencies:
+      '@mercuriusjs/federation': ^1.0.1
+      '@mercuriusjs/gateway': ^1.2.0
       fastify: ^4.0.0
       graphql: '*'
-      mercurius: ^11.0.0
+      mercurius: ^12.0.0
     dependencies:
       '@graphql-typed-document-node/core': 3.1.1_graphql@16.6.0
       cookie: 0.5.0
