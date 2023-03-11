@@ -18,7 +18,7 @@ specifiers:
   mercurius-codegen: 5.0.1
   mercurius-integration-testing: 8.0.0
   node-abort-controller: 3.1.1
-  node-fetch: 3.3.0
+  node-fetch: 3.3.1
   prettier: 2.8.4
   size-limit: 8.2.4
   tsdx: 0.14.1
@@ -47,7 +47,7 @@ devDependencies:
   mercurius-codegen: 5.0.1_c3tanjqwvjyl7ooj2quue23i2q
   mercurius-integration-testing: 8.0.0_tm6m5qldtprobfntarqunybz6u
   node-abort-controller: 3.1.1
-  node-fetch: 3.3.0
+  node-fetch: 3.3.1
   prettier: 2.8.4
   size-limit: 8.2.4
   tsdx: 0.14.1_@types+node@18.15.0
@@ -7067,8 +7067,8 @@ packages:
       whatwg-url: 5.0.0
     dev: true
 
-  /node-fetch/3.3.0:
-    resolution: {integrity: sha512-BKwRP/O0UvoMKp7GNdwPlObhYGB5DQqwhEDQlNKuoqwVYSxkSZCSbHjnFFmUEtwSKRPU4kNK8PbDYYitwaE3QA==}
+  /node-fetch/3.3.1:
+    resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       data-uri-to-buffer: 4.0.0
