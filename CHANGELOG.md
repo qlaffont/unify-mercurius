@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.60 (2023-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mercurius to v13 ([15beddb](https://github.com/flexper/unify-mercurius/commit/15beddb283991487ba4847b35c1a60a33d933cbd))
+
 ### 1.2.59 (2023-04-27)
 
 ### 1.2.58 (2023-04-26)
