@@ -76,7 +76,7 @@
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "mercurius-codegen": "5.0.2",
-    "mercurius-integration-testing": "8.0.0",
+    "mercurius-integration-testing": "8.1.0",
     "node-abort-controller": "3.1.1",
     "node-fetch": "3.3.1",
     "prettier": "2.8.8",
