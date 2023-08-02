@@ -97,7 +97,9 @@ describe('unifyMercuriusErrorFormatter', () => {
   describe('disableDetails', () => {
     it('should hide extensions if option enable', async () => {
       process.env.NODE_ENV = 'production';
-      const client = createMercuriusTestClient(makeServer({ disableDetails: true }));
+      const client = createMercuriusTestClient(
+        makeServer({ disableDetails: true })
+      );
 
       const res = await client.query(
         `query {
