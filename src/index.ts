@@ -16,7 +16,12 @@ export interface Options {
   /**
    * Removes the 'error' key from the error response
    */
-  hideError?: boolean;
+  disableDetails?: boolean;
+
+  /**
+   * Removes logging
+   */
+  disableLog?: boolean;
 }
 
 const safeStringify = (obj: unknown, indent = 2) => {
@@ -37,14 +42,14 @@ const safeStringify = (obj: unknown, indent = 2) => {
 
 //@ts-ignore
 export const unifyMercuriusErrorFormatter = (options?: Options) =>
-  ((execution) => {
+  ((execution, context) => {
     const newResponse = {
       errors: execution.errors
         ? //@ts-ignore
           execution.errors.map((error) => {
             const enrichedError = error;
 
-            if (!options?.hideError === true) {
+            if (!options?.disableDetails === true) {
               enrichedError.extensions.exception = enrichedError.originalError;
               Object.defineProperty(enrichedError, 'extensions', {
                 enumerable: true,
@@ -64,7 +69,7 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
                   extensions: {
                     ...(error.originalError as CustomError).context,
                   },
-                  ...(options?.hideError === true
+                  ...(options?.disableDetails === true
                     ? {}
                     : { originalError: error.originalError }),
                 }
@@ -74,7 +79,7 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
             JSON.parse(
               safeStringify({
                 message: 'Internal Server Error',
-                ...(options?.hideError === true
+                ...(options?.disableDetails === true
                   ? {}
                   : {
                       extensions: {
@@ -153,8 +158,15 @@ export const unifyMercuriusErrorFormatter = (options?: Options) =>
       0
     );
 
-    return {
+    const data = {
       statusCode: newStatusCode,
       response: JSON.parse(safeStringify(newResponse)),
     };
+
+    if (!options?.disableLog) {
+      //@ts-ignore
+      context.app.log.error(data);
+    }
+
+    return data;
   }) as MercuriusCommonOptions['errorFormatter'];
