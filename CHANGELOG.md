@@ -191,7 +191,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **deps:** update dependency mercurius to v13 ([15beddb](https://github.com/flexper/unify-mercurius/commit/15beddb283991487ba4847b35c1a60a33d933cbd))
+* **deps:** update dependency mercurius to v13 ([15beddb](https://github.com/qlaffont/unify-mercurius/commit/15beddb283991487ba4847b35c1a60a33d933cbd))
 
 ### 1.2.59 (2023-04-27)
 
@@ -322,7 +322,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **deps:** update dependency mercurius to v12 ([00b52c5](https://github.com/flexper/unify-mercurius/commit/00b52c568a794a325bf95c99b178b81494aec632))
+* **deps:** update dependency mercurius to v12 ([00b52c5](https://github.com/qlaffont/unify-mercurius/commit/00b52c568a794a325bf95c99b178b81494aec632))
 
 ### 1.0.114 (2023-01-29)
 

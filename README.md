@@ -1,9 +1,9 @@
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d28d1f8e89ae26ed6055/test_coverage)](https://codeclimate.com/github/flexper/unify-mercurius/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d28d1f8e89ae26ed6055/maintainability)](https://codeclimate.com/github/flexper/unify-mercurius/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d28d1f8e89ae26ed6055/test_coverage)](https://codeclimate.com/github/qlaffont/unify-mercurius/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d28d1f8e89ae26ed6055/maintainability)](https://codeclimate.com/github/qlaffont/unify-mercurius/maintainability)
 ![npm](https://img.shields.io/npm/v/unify-mercurius) ![npm](https://img.shields.io/npm/dm/unify-mercurius) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/unify-mercurius) ![NPM](https://img.shields.io/npm/l/unify-mercurius)
 # Unify Mercurius
 
-A Mercurius plugin wrapping [unify-errors](https://github.com/flexper/unify-errors) to handle REST errors
+A Mercurius plugin wrapping [unify-errors](https://github.com/qlaffont/unify-errors) to handle REST errors. Old Owner: [@flexper](https://github.com/flexper)
 
 ## Install
 

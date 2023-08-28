@@ -31,14 +31,14 @@
     "trailingComma": "es5"
   },
   "name": "unify-mercurius",
-  "author": "flexper",
+  "author": "qlaffont",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flexper/unify-mercurius.git"
+    "url": "https://github.com/qlaffont/unify-mercurius.git"
   },
   "bugs": {
-    "url": "https://github.com/flexper/unify-mercurius/issues",
-    "email": "contact@flexper.fr"
+    "url": "https://github.com/qlaffont/unify-mercurius/issues",
+    "email": "contact@qlaffont.com"
   },
   "module": "dist/unify-mercurius.esm.js",
   "size-limit": [
