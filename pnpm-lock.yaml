@@ -45,7 +45,7 @@ devDependencies:
     version: 2.29.1(@typescript-eslint/parser@6.4.1)(eslint@8.56.0)
   eslint-plugin-prettier:
     specifier: 5.1.3
-    version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.0.2)
+    version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.5)
   eslint-plugin-simple-import-sort:
     specifier: 10.0.0
     version: 10.0.0(eslint@8.56.0)
@@ -63,7 +63,7 @@ devDependencies:
     version: 29.5.0
   mercurius-codegen:
     specifier: 5.0.4
-    version: 5.0.4(fastify@4.26.0)(graphql@16.6.0)(mercurius@13.0.0)(prettier@3.0.2)
+    version: 5.0.4(fastify@4.26.0)(graphql@16.6.0)(mercurius@13.0.0)(prettier@3.2.5)
   mercurius-integration-testing:
     specifier: 8.1.1
     version: 8.1.1(fastify@4.26.0)(graphql@16.6.0)(mercurius@13.0.0)
@@ -74,8 +74,8 @@ devDependencies:
     specifier: 3.3.2
     version: 3.3.2
   prettier:
-    specifier: 3.0.2
-    version: 3.0.2
+    specifier: 3.2.5
+    version: 3.2.5
   size-limit:
     specifier: 8.2.6
     version: 8.2.6
@@ -4974,7 +4974,7 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.0.2):
+  /eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.5):
     resolution: {integrity: sha512-C9GCVAs4Eq7ZC/XFQHITLiHJxQngdtraXaM+LoUFoFp/lHNl2Zn8f3WQbe9HvTBBQ9YnKFB0/2Ajdqwo5D1EAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -4990,7 +4990,7 @@ packages:
     dependencies:
       eslint: 8.56.0
       eslint-config-prettier: 9.1.0(eslint@8.56.0)
-      prettier: 3.0.2
+      prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
     dev: true
@@ -8108,7 +8108,7 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /mercurius-codegen@5.0.4(fastify@4.26.0)(graphql@16.6.0)(mercurius@13.0.0)(prettier@3.0.2):
+  /mercurius-codegen@5.0.4(fastify@4.26.0)(graphql@16.6.0)(mercurius@13.0.0)(prettier@3.2.5):
     resolution: {integrity: sha512-ssOO8XVZ8Zxstr3jwXkJrP4MBCDvdnk5QUJ9YYhOkvXvZtujWHDNOEh8QomdXg7HanzHO/MlwJJZPN7NBc4zJA==}
     engines: {pnpm: '>=8.15.0'}
     peerDependencies:
@@ -8132,7 +8132,7 @@ packages:
       graphql: 16.6.0
       mercurius: 13.0.0(graphql@16.6.0)
       mkdirp: 2.1.6
-      prettier: 3.0.2
+      prettier: 3.2.5
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -8887,8 +8887,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.0.2:
-    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
