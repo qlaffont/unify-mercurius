@@ -80,7 +80,7 @@
     "node-abort-controller": "3.1.1",
     "node-fetch": "3.3.2",
     "prettier": "3.2.5",
-    "size-limit": "8.2.6",
+    "size-limit": "11.0.2",
     "ts-jest": "^29.1.0",
     "tsdx": "0.14.1",
     "tslib": "2.6.2",
