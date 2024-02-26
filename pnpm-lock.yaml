@@ -13,7 +13,7 @@ dependencies:
     version: 13.3.3(graphql@16.8.1)
   unify-errors:
     specifier: ^1.2.124
-    version: 1.2.209
+    version: 1.2.210
 
 devDependencies:
   '@jest/globals':
@@ -10859,8 +10859,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /unify-errors@1.2.209:
-    resolution: {integrity: sha512-fpdLM10Wz/xKAoZJJzwcWoeIikLOXLm07LvjLu0U9AN8XeQqemxUlHCXR7jayqKY6cXlzifH25TNpUQf1YhZDA==}
+  /unify-errors@1.2.210:
+    resolution: {integrity: sha512-M93kfnuQdgJA72ns73D3zNdWtoB6UGsolKnE8uInWrpcLsOxiGmseIasuvbBPbaxOfwOaZiTyam3V79+hVo0sQ==}
     engines: {node: '>=10'}
     dev: false
 
