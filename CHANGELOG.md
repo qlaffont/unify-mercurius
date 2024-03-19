@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.3.92 (2024-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mercurius to v14 ([14618e8](https://github.com/qlaffont/unify-mercurius/commit/14618e836fdd00616a2caa8cce7402fff73ab6f7))
+
 ### 1.3.91 (2024-03-19)
 
 ### 1.3.90 (2024-03-19)
