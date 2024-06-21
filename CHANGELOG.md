@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.3.194 (2024-06-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v16.9.0 ([ebf13d2](https://github.com/qlaffont/unify-mercurius/commit/ebf13d273f827440002a2f4781af9b8123b14a19))
+
 ### 1.3.193 (2024-06-21)
 
 
