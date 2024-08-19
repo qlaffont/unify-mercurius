@@ -63,7 +63,7 @@
     "@jest/globals": "29.7.0",
     "@size-limit/preset-small-lib": "11.1.4",
     "@types/jest": "^29.5.0",
-    "@types/node": "20.16.0",
+    "@types/node": "20.16.1",
     "@typescript-eslint/eslint-plugin": "8.1.0",
     "@typescript-eslint/parser": "8.1.0",
     "eslint": "8.57.0",
