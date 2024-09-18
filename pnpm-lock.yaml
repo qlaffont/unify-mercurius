@@ -64,8 +64,8 @@ importers:
         specifier: ^29.5.0
         version: 29.7.0
       mercurius-codegen:
-        specifier: 5.0.5
-        version: 5.0.5(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(graphql@16.9.0))(prettier@3.3.3)
+        specifier: 6.0.0
+        version: 6.0.0(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(graphql@16.9.0))(prettier@3.3.3)
       mercurius-integration-testing:
         specifier: 9.0.0
         version: 9.0.0(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(graphql@16.9.0))
@@ -3891,14 +3891,14 @@ packages:
     resolution: {integrity: sha512-4y7uGv8bd2WdM9vpQsiQNo41Ln1NvhvDRuVt0k2JZQ+ezN2uaQes7lZeZ+QQUHOLQAtDaBJ+7wCbi+ab/KFs+w==}
     engines: {node: '>=0.10.0'}
 
-  mercurius-codegen@5.0.5:
-    resolution: {integrity: sha512-N0cggI6MkzhggthSnjGyTav80KbRNQG6ajr6lKx0CjRB2UF9X6NlnKKtapKyTlJ2CB+a/zUMdJUj3gICpiZ9AA==}
+  mercurius-codegen@6.0.0:
+    resolution: {integrity: sha512-XfrwQ7wc4TE9+OkGiypXMacphbTcvw6p2olEQYMdbTyfebqG9g8xMVPQ9doKpklDa1GUbV2a+D9JbYl0SbGepw==}
     engines: {pnpm: '>=8.15.7'}
     peerDependencies:
-      fastify: ^4.26.2
+      fastify: ^5.0.0
       graphql: '*'
-      mercurius: ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
-      prettier: ^2.8.8
+      mercurius: ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
+      prettier: ^3.3.3
 
   mercurius-integration-testing@9.0.0:
     resolution: {integrity: sha512-N2GRMPOZ2BjgnTUH3QKcv9INd3AXb7u7GYQQ8EeakBTqZ68PkWppM32RwNTRMKuxJblUBbTEOJ5diAwo0ETP9A==}
@@ -8817,7 +8817,7 @@ snapshots:
     dependencies:
       eslint: 8.57.1
 
-  eslint-config-react-app@5.2.1(@typescript-eslint/eslint-plugin@2.34.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)(typescript@3.9.10))(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(babel-eslint@10.1.0(eslint@8.57.1))(eslint-plugin-flowtype@3.13.0(eslint@8.57.1))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.4.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.5.1(eslint@8.57.1))(eslint-plugin-react-hooks@2.5.1(eslint@6.8.0))(eslint-plugin-react@7.29.4(eslint@6.8.0))(eslint@6.8.0)(typescript@3.9.10):
+  eslint-config-react-app@5.2.1(@typescript-eslint/eslint-plugin@2.34.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)(typescript@3.9.10))(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(babel-eslint@10.1.0(eslint@8.57.1))(eslint-plugin-flowtype@3.13.0(eslint@6.8.0))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.4.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.5.1(eslint@6.8.0))(eslint-plugin-react-hooks@2.5.1(eslint@6.8.0))(eslint-plugin-react@7.29.4(eslint@6.8.0))(eslint@6.8.0)(typescript@3.9.10):
     dependencies:
       '@typescript-eslint/eslint-plugin': 2.34.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)(typescript@3.9.10)
       '@typescript-eslint/parser': 2.34.0(eslint@6.8.0)(typescript@3.9.10)
@@ -10959,7 +10959,7 @@ snapshots:
     dependencies:
       object-visit: 1.0.1
 
-  mercurius-codegen@5.0.5(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(graphql@16.9.0))(prettier@3.3.3):
+  mercurius-codegen@6.0.0(fastify@4.28.1)(graphql@16.9.0)(mercurius@14.1.0(graphql@16.9.0))(prettier@3.3.3):
     dependencies:
       '@graphql-codegen/core': 3.1.0(graphql@16.9.0)
       '@graphql-codegen/plugin-helpers': 4.2.0(graphql@16.9.0)
@@ -12414,7 +12414,7 @@ snapshots:
       enquirer: 2.3.6
       eslint: 6.8.0
       eslint-config-prettier: 6.15.0(eslint@6.8.0)
-      eslint-config-react-app: 5.2.1(@typescript-eslint/eslint-plugin@2.34.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)(typescript@3.9.10))(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(babel-eslint@10.1.0(eslint@8.57.1))(eslint-plugin-flowtype@3.13.0(eslint@8.57.1))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.4.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.5.1(eslint@8.57.1))(eslint-plugin-react-hooks@2.5.1(eslint@6.8.0))(eslint-plugin-react@7.29.4(eslint@6.8.0))(eslint@6.8.0)(typescript@3.9.10)
+      eslint-config-react-app: 5.2.1(@typescript-eslint/eslint-plugin@2.34.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)(typescript@3.9.10))(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(babel-eslint@10.1.0(eslint@8.57.1))(eslint-plugin-flowtype@3.13.0(eslint@6.8.0))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.4.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.5.1(eslint@6.8.0))(eslint-plugin-react-hooks@2.5.1(eslint@6.8.0))(eslint-plugin-react@7.29.4(eslint@6.8.0))(eslint@6.8.0)(typescript@3.9.10)
       eslint-plugin-flowtype: 3.13.0(eslint@6.8.0)
       eslint-plugin-import: 2.30.0(@typescript-eslint/parser@2.34.0(eslint@6.8.0)(typescript@3.9.10))(eslint@6.8.0)
       eslint-plugin-jsx-a11y: 6.5.1(eslint@6.8.0)

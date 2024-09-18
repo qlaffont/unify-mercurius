@@ -75,7 +75,7 @@
     "husky": "9.1.6",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
-    "mercurius-codegen": "5.0.5",
+    "mercurius-codegen": "6.0.0",
     "mercurius-integration-testing": "9.0.0",
     "node-abort-controller": "3.1.1",
     "node-fetch": "3.3.2",
