@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.3.297 (2024-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency unify-errors to v1.3.52 ([#588](https://github.com/qlaffont/unify-mercurius/issues/588)) ([6c09d61](https://github.com/qlaffont/unify-mercurius/commit/6c09d6149d236828b3c36ac1994f11dd24b091fe))
+
 ### 1.3.296 (2024-11-13)
 
 
