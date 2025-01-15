@@ -90,5 +90,6 @@
     "graphql": "^16.6.0",
     "mercurius": "^16.0.0",
     "unify-errors": "^1.2.124"
-  }
+  },
+  "packageManager": "pnpm@9.15.4"
 }
