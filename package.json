@@ -91,5 +91,5 @@
     "mercurius": "^16.0.0",
     "unify-errors": "^1.2.124"
   },
-  "packageManager": "pnpm@9.15.7"
+  "packageManager": "pnpm@9.15.8"
 }
