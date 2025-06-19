@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.3.434 (2025-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mercurius to v16.2.0 ([#737](https://github.com/qlaffont/unify-mercurius/issues/737)) ([d8173b1](https://github.com/qlaffont/unify-mercurius/commit/d8173b18a4ae37c6547efd288123902ba6fb1766))
+
 ### 1.3.433 (2025-06-19)
 
 ### 1.3.432 (2025-06-17)
