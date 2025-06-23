@@ -16,7 +16,7 @@ importers:
         version: 16.2.0(graphql@16.11.0)
       unify-errors:
         specifier: ^1.2.124
-        version: 1.3.86
+        version: 1.3.87
     devDependencies:
       '@jest/globals':
         specifier: 30.0.2
@@ -5901,8 +5901,8 @@ packages:
     resolution: {integrity: sha512-5Zfuy9q/DFr4tfO7ZPeVXb1aPoeQSdeFMLpYuFebehDAhbuevLs5yxSZmIFN1tP5F9Wl4IpJrYojg85/zgyZHQ==}
     engines: {node: '>=4'}
 
-  unify-errors@1.3.86:
-    resolution: {integrity: sha512-iJ6BwqutfsOYFc8kkn7uXhCPlO9+PwwbW+4JYlq5WDQa3QBwHFl/eF141FHmXLDkgFAZ+SXxUwb3YdOl107Gow==}
+  unify-errors@1.3.87:
+    resolution: {integrity: sha512-FeESOHIsgnpsWFehSu4N1KA0o6Mq/LEb0WUKPV74EX3DIvEzkFKMkm92bVEU0oa0pfm7lDO+YGdn4HRkw+r4bA==}
     engines: {node: '>=10'}
 
   union-value@1.0.1:
@@ -13898,7 +13898,7 @@ snapshots:
 
   unicode-property-aliases-ecmascript@2.0.0: {}
 
-  unify-errors@1.3.86: {}
+  unify-errors@1.3.87: {}
 
   union-value@1.0.1:
     dependencies:
