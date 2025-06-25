@@ -60,7 +60,7 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "@jest/globals": "30.0.2",
+    "@jest/globals": "30.0.3",
     "@size-limit/preset-small-lib": "11.2.0",
     "@types/jest": "^30.0.0",
     "@types/node": "22.15.32",
